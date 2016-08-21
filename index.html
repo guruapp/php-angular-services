@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/Script.js"></script>
+    <script src="Scripts/filters.js"></script>
+    <link rel="stylesheet" type="text/css" href="Styles.css">
+    <meta charset="UTF-8">
+    <title>Document 1</title>
+
+</head>
+<body
+
+<div ng-controller="myCtrl">
+{{error}}
+<br><br>
+Select view <select ng-model="employeeView">
+    <option value="">---</option>
+    <option value="employeeTable.html">Table view</option>
+    <option value="employeeUl.html">Ul view</option>
+</select>
+<div ng-include="employeeView"></div>
+
+
+
+
+ </div>
+
+</body>
+</html>
